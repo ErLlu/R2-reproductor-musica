@@ -2,7 +2,7 @@ export const areSameSong = (song, songTitle) => {
     return song.title === songTitle;
 };
 export const addSong = (song, songs) => {
-    let title = songs.push(song);
+    songs.push(song);
 };
 export const isPlaylistFull = (songs) => {
     return songs.length >= 4;
@@ -38,7 +38,6 @@ export const getNextSongPosition = (songs, currentSongPosition) => {
     return nextSongPosition;
 };
 export const isCurrentSong = (song) => {
-    let isCurrent;
     return song.isCurrent;
 };
 //# sourceMappingURL=songs.js.map

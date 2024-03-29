@@ -1,11 +1,11 @@
-import { Song, existingSongs } from "./songsData";
+import { Song } from "./songsData";
 
 export const areSameSong = (song: Song, songTitle: string): boolean => {
   return song.title === songTitle;
 };
 
 export const addSong = (song: Song, songs: Song[]): void => {
-  let title = songs.push(song);
+  songs.push(song);
 };
 
 export const isPlaylistFull = (songs: Song[]): boolean => {
@@ -52,6 +52,5 @@ export const getNextSongPosition = (
 };
 
 export const isCurrentSong = (song: Song): boolean => {
-  let isCurrent: boolean;
   return song.isCurrent;
 };
